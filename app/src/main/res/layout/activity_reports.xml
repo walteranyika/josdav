@@ -22,4 +22,11 @@
         android:layout_height="wrap_content"
         android:text="Monthly Report"/>
 
+    <Button
+        android:onClick="fishGrowth"
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fish Growth Report"/>
+
 </LinearLayout>

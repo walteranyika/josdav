@@ -72,7 +72,7 @@ public class GoogleSignInActivity extends AppCompatActivity implements GoogleApi
         findViewById(R.id.sign_up_button).setOnClickListener(this);
 
 
-        FirebaseUser user = mAuth.getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         if (user != null) {
 

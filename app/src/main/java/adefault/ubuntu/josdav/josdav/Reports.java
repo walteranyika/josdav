@@ -39,4 +39,8 @@ public class Reports extends AppCompatActivity {
     public void monthlyReports(View view) {
         startActivity(new Intent(this, MonthlyReportsActivity.class));
     }
+
+    public void fishGrowth(View view) {
+        startActivity(new Intent(this, FishGrowthReportActivity.class));
+    }
 }

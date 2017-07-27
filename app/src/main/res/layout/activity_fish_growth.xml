@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="60dp"
+    tools:context="adefault.ubuntu.josdav.josdav.FishGrowthActivity">
+
+
+    <TextView
+        android:textSize="19dp"
+        android:text="POND"
+        android:id="@+id/tvPondName"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edtFishWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fish Weight"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:onClick="submit"
+        android:layout_marginTop="16dp"
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+</LinearLayout>

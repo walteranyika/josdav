@@ -17,7 +17,6 @@
         <activity
             android:name=".SignupActivity"
             android:label="Josdav Enterprises">
-
         </activity>
         <activity android:name=".Newpond"/>
         <activity
@@ -42,13 +41,18 @@
         </activity>
         <activity android:name=".MonthlyReportsActivity">
         </activity>
-
         <activity android:name=".GoogleSignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".FishGrowthActivity"
+            android:label="Fish Growth">
+        </activity>
+        <activity android:name=".FishGrowthReportActivity">
         </activity>
     </application>
 
