@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="end"
+        android:hint="Date"
+        android:maxLines="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+
+        tools:text="Day"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        tools:text="Temp" />
+
+    <TextView
+        android:id="@+id/character"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+
+        tools:text="character"
+        android:layout_alignBaseline="@+id/temperature"
+        android:layout_alignBottom="@+id/temperature"
+        android:layout_alignLeft="@+id/day"
+        android:layout_alignStart="@+id/day" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/character"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Day" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/day"
+        android:text="Mood" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:layout_alignBaseline="@+id/temperature"
+        android:layout_alignBottom="@+id/temperature"
+        android:layout_toLeftOf="@+id/temperature"
+        android:layout_toStartOf="@+id/temperature" />
+
+</RelativeLayout>

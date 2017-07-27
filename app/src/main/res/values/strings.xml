@@ -1,0 +1,324 @@
+<resources>
+    <string name="app_name">Josdav Enterprises</string>
+    <string name="signup"/>
+    <string name="login"/>
+    <string name="email_hint"/>
+    <string name="password_hint"/>
+    <string name="sign_up"/>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+
+
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Josdav now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <string name="cage">Cage</string>
+    <string name="pond">Pond</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_home">Josdav Enterprises</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">logout</string>
+    <string name="notification_title">Josdav Enterprises</string>
+    <string name="notification_subject">Update Ponds Info</string>
+    <string name="profile_title">Josdav Enterprises</string>
+    <string name="user_deletion_error">Error Deleting Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_profile_name">Name</string>
+    <string name="edit_profile_country">Country</string>
+    <string name="edit_profile_phone">Phone number</string>
+    <string name="edit_profile_hobby">Hobby</string>
+    <string name="select_date">Date</string>
+    <string name="save_edit">Save edit</string>
+    <string name="action_save">Save</string>
+    <string name="sign_out">Sign out</string>
+    <string name="disconnect">Disconnect</string>
+
+    <string name="label_google_sign_in">Josdav Enterprises</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Josdav Enterprises.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="verify_email">Verify Email</string>
+
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Username: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Email: %s</string>
+    <string name="google_title_text">Josdav Enterprises</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="Proceed">Proceed</string>
+    <array name="genres">
+        <item name="monday">Monday</item>
+        <item name="tuesday">Tuesday</item>
+        <item name="wednesday">Wednesday</item>
+        <item name="thursday">Thursday</item>
+        <item name="friday">Friday</item>
+        <item name="saturday">Saturday</item>
+        <item name="sunday">Sunday</item>
+    </array>
+    <string-array name="feed">
+        <item name="mash">Mash</item>
+        <item name="granules">Granules</item>
+        <item name="2mm">2mm</item>
+        <item name="3mm">3mm</item>
+        <item name="4.5mm">4.5mm</item>
+        <item name="6mm">6mm</item>
+
+    </string-array>
+    <string-array name="day">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+        <item name="12">12</item>
+        <item name="13">13</item>
+        <item name="14">14</item>
+        <item name="15">15</item>
+        <item name="16">16</item>
+        <item name="17">17</item>
+        <item name="18">18</item>
+        <item name="19">19</item>
+        <item name="20">20</item>
+        <item name="21">21</item>
+        <item name="22">22</item>
+        <item name="23">23</item>
+        <item name="24">24</item>
+        <item name="25">25</item>
+        <item name="26">26</item>
+        <item name="27">27</item>
+        <item name="28">28</item>
+        <item name="29">29</item>
+        <item name="30">30</item>
+        <item name="31">31</item>
+
+    </string-array>
+    <array name="month">
+        <item name="january">January</item>
+        <item name="february">February</item>
+        <item name="march">March</item>
+        <item name="april">April</item>
+        <item name="may">May</item>
+        <item name="june">June</item>
+        <item name="july">July</item>
+        <item name="august">August</item>
+        <item name="september">September</item>
+        <item name="october">October</item>
+        <item name="november">November</item>
+        <item name="december">December</item>
+
+    </array>
+    <string-array name="year">
+        <item name="2017">2017</item>
+        <item name="2018">2018</item>
+        <item name="2019">2019</item>
+        <item name="2020">2020</item>
+        <item name="2021">2021</item>
+    </string-array>
+    <string name="type_msg">Type message</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="or">or</string>
+
+    <string name="displayName">Display Name</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_my_pwd">I’ve forgotten my password?</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">All Chats</string>
+    <string name="search">Search</string>
+    <string name="to">To:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">New Chat</string>
+    <string name="alert_wait">Please wait...</string>
+    <string name="err_fields_empty">Please fill all the fields.</string>
+    <string name="err_singup">Error occurred while signup:</string>
+    <string name="err_login">Error occurred while login:</string>
+    <string name="err_users">Error occurred while finding users:</string>
+    <string name="alert_loading">Loading...</string>
+    <string name="msg_no_user_found">No users found for chat!</string>
+    <string name="delivered_text">Delivered</string>
+    <string name="sending_text">Sending...</string>
+    <string name="failed_text">Failed</string>
+    <string name="dull">Dull</string>
+    <string name="happy">Happy</string>
+    <string name="good">Good</string>
+    <string name="profile_progress_message">uploadiiioming</string>
+    <string name="desc_google_icon">Google Logo</string>
+    <string name="title_activity_welcome">FriendlyPix</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_screen_text">Welcome to FriendlyPix</string>
+    <string name="explore_button_text">explore</string>
+    <string name="sign_in_button_text">sign in</string>
+    <string name="sign_out_button_text">sign out</string>
+    <string name="show_feed_button_text">show feed</string>
+    <string name="drawer_profile_title">Profile</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="error_upload_task_create">Couldn\'t create upload task.</string>
+    <string name="default_progress_message">Please wait...</string>
+
+    <string name="post_upload_progress_message">Uploading...</string>
+    <string name="user_logged_out_error">You must be logged in to do that.</string>
+    <string name="error_user_not_signed_in">Error user not signed in.</string>
+    <string name="fcr">FCR</string>
+    <string name="temperature">Temperature</string>
+    <string name="feed_quantity">Feed Quantity</string>
+    <string name="feed_type">Feed Type</string>
+    <string name="mortality">Mortality</string>
+    <string name="daily_data_pond_input">Daily Data Pond Input</string>
+    <string name="post">Add</string>
+    <string name="give_an_answer">Give an Answer</string>
+    <string name="ask">Ask</string>
+    <string name="give_answer">Give An Answer</string>
+    <string name="answers_provided">Answers Provided</string>
+    <string name="enter_faq">Enter A Faq</string>
+    <string name="post_question">Post Question</string>
+    <string name="faqs">FAQS</string>
+    <string name="ask_a_question">Ask A Question</string>
+    <string name="size">Size</string>
+    <string name="stock">Stock</string>
+    <string name="fish_size">Fish size</string>
+    <string name="fish_type">Fish type</string>
+    <string name="location">Location</string>
+    <string name="add_new_pond_cage">New Pond/Cage</string>
+    <string name="pond_reference">Pond/Cage Reference</string>
+    <string name="number_harvested">Number Harvested</string>
+    <string name="size_harvested">Fish Size</string>
+    <string name="price">Price</string>
+    <string name="addsale">Add</string>
+    <string name="sales_data_input">Sales Data Input</string>
+    <string name="sales_data">Sales Data</string>
+    <string name="type_a_comment">Type a Comment</string>
+    <string name="pos">Post</string>
+    <string name="uemail">Email</string>
+    <string name="subject">Subject</string>
+    <string name="message">Feedback</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_phone_2">Enter Phone 2</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="pricev">Price</string>
+    <string name="sizev">Size</string>
+    <string name="number_soldv">Number sold</string>
+    <string name="yearv">year</string>
+    <string name="enter_topic">Give A Topic</string>
+    <string name="topics">Topics</string>
+    <string name="profile">My Profile</string>
+    <string name="discussion">Discussion</string>
+    <string name="faq_s">FAQS</string>
+    <string name="about">About</string>
+    <string name="fcrpage">FCR</string>
+    <string name="postr">Post</string>
+    <string name="reps">reports</string>
+    <string name="rep">Reports</string>
+    <string name="si">Weight</string>
+    <string name="prcev">Amt Received</string>
+    <string name="number_sldv">Quantity</string>
+    <string name="numbe_harvested">Quantity</string>
+    <string name="sie_harvested">Weight</string>
+    <string name="pice">Amount Received</string>
+</resources>

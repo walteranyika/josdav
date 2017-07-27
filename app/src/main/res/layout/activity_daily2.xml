@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="adefault.ubuntu.josdav.josdav.PondDaily">
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+
+        android:id="@+id/expandableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical">
+
+        <Spinner
+            android:id="@+id/feed_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textInputLayout70"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/textInputLayout70"
+            android:ems="10"
+            android:entries="@array/feed"
+            android:gravity="start"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_type">
+
+            <EditText
+                android:id="@+id/feed_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_type"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/feed_quantity"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout70"
+            >
+
+            <EditText
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_quantity"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/temperature"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout71"
+            >
+
+            <EditText
+                android:id="@+id/mortality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperature"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/mortality"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textInputLayout91"
+            android:layout_centerVertical="true"
+            >
+
+            <RadioButton
+                android:id="@+id/Good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/good"/>
+
+            <RadioButton
+                android:id="@+id/Happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/happy"/>
+
+            <RadioButton
+                android:id="@+id/Dull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dull"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_post_comment"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temperature"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="7dp"
+
+
+            android:layout_marginRight="7dp"
+
+            android:background="@color/btn_login"
+            android:text="@string/post"/>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expandableLayout3"
+        android:background="@color/colorPrimary"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton4"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/daily_data_pond_input"
+        android:textColor="#000000"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expandableButton4"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Daily Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/PondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textView"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Pond Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/PondFeedType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/PondName"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Feed Type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/PondFeedQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/PondFeedType"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Feed Quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/PondTemprature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/PondFeedQty"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Temprature"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/PondMortality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/PondTemprature"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Mortality"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/PondMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/PondMortality"
+        android:gravity="left"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Mood"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+</RelativeLayout>

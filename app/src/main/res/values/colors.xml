@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36b4e6</color>
+    <color name="colorPrimaryDark">#64cceb</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#556272</color>
+    <color name="bg_main">#BFBFBF</color>
+    <color name="white">#e3e0e0</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#91aa9d</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="tabsScrollColor">#000000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#031F20</color>
+    <color name="colorMild">#adc1a5</color>
+    <color name="colorDivider">#eae6e6</color>
+    <color name="white_smoke">#f7f7f7</color>
+
+    <color name="black">#e6dfdf</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="main_color_green">#00b863</color>
+    <color name="main_color_gray_dk">#3b3b3b</color>
+    <color name="main_color_gray_lt">#f8f8f8</color>
+    <color name="main_color_gray">#7d7d7d</color>
+    <color name="gray_light">#e8e8e8</color>
+</resources>

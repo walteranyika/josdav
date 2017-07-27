@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "50923091285",
+    "firebase_url": "https://josdav-app-6505b.firebaseio.com",
+    "project_id": "josdav-app-6505b",
+    "storage_bucket": "josdav-app-6505b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50923091285:android:663cc4010b1260fe",
+        "android_client_info": {
+          "package_name": "adefault.ubuntu.josdav.josdav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50923091285-kis08oam0i21qq9umet49kkd64ova719.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adefault.ubuntu.josdav.josdav",
+            "certificate_hash": "d26fa9d8504abbedd4e14b107c2fe9d8f6f3a458"
+          }
+        },
+        {
+          "client_id": "50923091285-pr6cu8btnlklqs74g9rv5kh0ri3m5ev5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89Qn8HgtLw7PlI1kz0YTpziOM_QPJzf4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50923091285-pr6cu8btnlklqs74g9rv5kh0ri3m5ev5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

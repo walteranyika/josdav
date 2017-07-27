@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="adefault.ubuntu.josdav.josdav">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/i_launch"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="Josdav Enterprises">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Newpond"/>
+        <activity
+            android:name=".PondDaily"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SalesData"/>
+        <activity android:name=".SendMessage"/>
+        <activity android:name=".TopicDiscussion"/>
+
+        <receiver android:name=".Notification_receiver"/>
+
+        <activity android:name=".Faqs"/>
+        <activity android:name=".FAQActivity"/>
+        <activity android:name=".UserP"/>
+        <activity android:name=".User_Information"/>
+        <activity android:name=".FCR"/>
+        <activity android:name=".FCRIN"/>
+        <activity android:name=".About"/>
+        <activity android:name=".Reports"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".DailyReportsActivity">
+        </activity>
+        <activity android:name=".MonthlyReportsActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adefault.ubuntu.josdav.josdav.About"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textVie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="@dimen/nav_header_vertical_spacing"
+                android:text="About Josdav"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#303F9F"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#ffffff"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/about"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="@dimen/nav_header_vertical_spacing"
+                android:text="HOW KOBCIYE MAKES OUR COMMUNITY SAFER"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#303F9F"
+                android:textSize="17sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#ffffff"
+                android:lineSpacingMultiplier="1.2"
+                android:text="It is a good App"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+
