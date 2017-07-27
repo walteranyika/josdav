@@ -72,6 +72,15 @@ public class GoogleSignInActivity extends AppCompatActivity implements GoogleApi
         findViewById(R.id.sign_up_button).setOnClickListener(this);
 
 
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if (user != null) {
+
+            finish();
+            Intent moveToHome = new Intent(GoogleSignInActivity.this,MainActivity.class);
+            moveToHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(moveToHome);
+        }
         // [START config_signin]
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
