@@ -76,10 +76,11 @@ public class GoogleSignInActivity extends AppCompatActivity implements GoogleApi
 
         if (user != null) {
 
-            finish();
+
             Intent moveToHome = new Intent(GoogleSignInActivity.this,MainActivity.class);
             moveToHome.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(moveToHome);
+            finish();
         }
         // [START config_signin]
         // Configure Google Sign In
