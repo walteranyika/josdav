@@ -49,6 +49,8 @@
         android:text="@string/signed_out" />
 
     <Button
+        android:background="@drawable/selector_button"
+        android:textColor="#fff"
         android:id="@+id/button_sign_in"
         android:layout_width="@dimen/field_width_standard"
         android:layout_height="wrap_content"

@@ -28,7 +28,7 @@ public class FishGrowthReportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish_growth_report);
         getSupportActionBar().setTitle("Fish Growth Report");
-        
+
 
         mListView= (ListView) findViewById(R.id.fishGrowthListView);
         data=new ArrayList<>();

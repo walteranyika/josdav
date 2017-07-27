@@ -130,7 +130,8 @@
             android:layout_gravity="right"
             android:layout_marginEnd="7dp"
             android:layout_marginRight="7dp"
-            android:background="@color/btn_login"
+            android:background="@drawable/selector_button"
+            android:textColor="#fff"
             android:text="@string/post"/>
 
 

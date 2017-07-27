@@ -32,6 +32,8 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
+        android:background="@drawable/selector_button"
+        android:textColor="#fff"
         android:onClick="submit"
         android:layout_marginTop="16dp"
         android:id="@+id/button7"
