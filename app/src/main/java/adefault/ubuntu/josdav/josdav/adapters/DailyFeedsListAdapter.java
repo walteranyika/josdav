@@ -62,7 +62,7 @@ public class DailyFeedsListAdapter extends BaseAdapter {
         }
 
         final Comment product = temporaryArray.get(position);
-        viewHolder.tvDay.setText(""+product.getFormattedDate(product.messageTime));
+        viewHolder.tvDay.setText(product.getFormattedDate(product.messageTime));
         viewHolder.tvFeedType.setText(product.feed_type);
         viewHolder.tvPond.setText(product.getPondId());
         viewHolder.tvFeedQty.setText(product.feed_quantity);
@@ -82,9 +82,9 @@ public class DailyFeedsListAdapter extends BaseAdapter {
         } else {
             for (Comment p : permanentArray) {
                 //|| (p.getCode()+"").contains(text) || (p.getPrice()+"").contains(text)
-              /*  if (p.getTitle().toLowerCase().contains(text) || (p.getCode() + "").contains(text) || (p.getPrice() + "").contains(text) || p.getCategory().toLowerCase().contains(text) || p.getDescription().toLowerCase().contains(text)) {
+                if (p.getFeed_type().toLowerCase().contains(text) || (p.getPondId() + "").contains(text) || p.getFormattedDate(p.messageTime).contains(text) ) {
                     temporaryArray.add(p);
-                }*/
+                }
             }
             Log.d("SEARCH", "COUNT " + temporaryArray.size());
         }

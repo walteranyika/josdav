@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    // signingConfigs {
-    //     releaseConfig {
-    //         keyAlias 'keyjos'
-    //         keyPassword 'muthomi20'
-    //         storeFile file('C:/Users/android/Desktop/josapp/joskey.keystore.jks')
-    //         storePassword 'muthomi1997'
-    //     }
-    // }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {

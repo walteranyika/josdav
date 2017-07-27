@@ -26,19 +26,7 @@ public class User1 {
         this.phone2 = phone2;
         this.home=home;
     }
-    /**
-    @Exclude
-    public Map<String, Object> toMap() {
-        HashMap<String, Object> result = new HashMap<>();
 
-        result.put("fullname", fullname);
-        result.put("phone1", phone1);
-        result.put("phone2", phone2);
-        result.put("home",home);
-
-        return result;
-    }
-    */
 
     public String getFullname() {
         return fullname;

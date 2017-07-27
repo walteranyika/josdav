@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import adefault.ubuntu.josdav.josdav.Comment;
 import adefault.ubuntu.josdav.josdav.R;
 import adefault.ubuntu.josdav.josdav.models.MonthlyItem;
 
@@ -79,12 +78,13 @@ public class MonthlyFeedsListAdapter extends BaseAdapter {
         temporaryArray.clear();
         if (text.trim().length() == 0) {
             temporaryArray.addAll(permanentArray);
-        } else {
-            for (MonthlyItem p : permanentArray) {
-                //|| (p.getCode()+"").contains(text) || (p.getPrice()+"").contains(text)
-              /*  if (p.getTitle().toLowerCase().contains(text) || (p.getCode() + "").contains(text) || (p.getPrice() + "").contains(text) || p.getCategory().toLowerCase().contains(text) || p.getDescription().toLowerCase().contains(text)) {
+        } else
+        {
+            for (MonthlyItem p : permanentArray)
+            {
+               if (p.getMonth().toLowerCase().contains(text) || (p.getQuantity() + "").contains(text) || (p.getPondName() + "").contains(text) || p.getFeedType().toLowerCase().contains(text)) {
                     temporaryArray.add(p);
-                }*/
+                }
             }
             Log.d("SEARCH", "COUNT " + temporaryArray.size());
         }

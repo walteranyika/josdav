@@ -2,7 +2,9 @@ package adefault.ubuntu.josdav.josdav;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
+import android.view.Menu;
 import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -67,5 +69,27 @@ public class DailyReportsActivity extends AppCompatActivity {
     }
     public String getUid() {
         return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //getMenuInflater().inflate(R.menu.searchable_menu, menu);
+
+       /* SearchView searchView =(SearchView) menu.findItem(R.id.menu_search).getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                Log.d("SEARCH", newText);
+                mAdapter.filter(newText);
+                return false;
+            }
+        });*/
+        return super.onCreateOptionsMenu(menu);
     }
 }
