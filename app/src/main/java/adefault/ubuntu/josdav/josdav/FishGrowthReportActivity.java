@@ -27,7 +27,7 @@ public class FishGrowthReportActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish_growth_report);
-        getSupportActionBar().setTitle("Fish Growth Report");
+        getSupportActionBar().setTitle("Growth Monitor");
 
 
         mListView= (ListView) findViewById(R.id.fishGrowthListView);

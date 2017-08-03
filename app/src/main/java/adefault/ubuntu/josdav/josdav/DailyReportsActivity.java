@@ -28,6 +28,7 @@ public class DailyReportsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_reports);
+        getSupportActionBar().setTitle("Daily Feeds");
         mListView= (ListView) findViewById(R.id.dailyFeedsListView);
         data=new ArrayList<>();
         mAdapter=new DailyFeedsListAdapter(this, data);

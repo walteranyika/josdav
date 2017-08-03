@@ -31,6 +31,7 @@ public class MonthlyReportsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monthly_reports);
+        getSupportActionBar().setTitle("Monthly Feeds");
         data=new ArrayList<>();
         monthlyFeedsListView= (ListView) findViewById(R.id.monthlyFeedsListView);
         mMonthlyFeedsListAdapter=new MonthlyFeedsListAdapter(this,data);
