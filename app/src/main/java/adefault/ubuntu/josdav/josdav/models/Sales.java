@@ -1,7 +1,9 @@
-package adefault.ubuntu.josdav.josdav;
+package adefault.ubuntu.josdav.josdav.models;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 // [START comment_class]
@@ -41,6 +43,30 @@ public class Sales {
     }
     public long getMessageTime() {
         return messageTime;
+    }
+
+    public String getFormattedDate(long time) {
+        Date date = new Date(time);
+        DateFormat formatter = new SimpleDateFormat("dd-MM-yy");
+        String dateFormatted = formatter.format(date);
+        return dateFormatted;
+    }
+    public String getFormattedMonth(long time) {
+        Date date = new Date(time);
+        DateFormat formatter = new SimpleDateFormat("MMMM");
+        String dateFormatted = formatter.format(date);
+        return dateFormatted;
+    }
+    public String getNumber() {
+        return number;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public String getPrice() {
+        return price;
     }
 }
 

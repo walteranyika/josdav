@@ -2,7 +2,6 @@ package adefault.ubuntu.josdav.josdav;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.ListView;
@@ -12,12 +11,12 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 import adefault.ubuntu.josdav.josdav.adapters.DailyFeedsListAdapter;
+import adefault.ubuntu.josdav.josdav.models.Comment;
 
 public class DailyReportsActivity extends AppCompatActivity {
     ListView mListView;
@@ -53,8 +52,8 @@ public class DailyReportsActivity extends AppCompatActivity {
                              Log.d("LAST",pond_title+" "+last.toString());
                              Comment major = last.getValue(Comment.class);
                              //String feed_type, String feed_quantity, long messageTime, String pondId
-                             Comment yetu = new Comment(major.feed_type,major.feed_quantity,major.messageTime,pond_title);
-                             data.add(yetu);
+                             Comment actual = new Comment(major.feed_type,major.feed_quantity,major.messageTime,pond_title);
+                             data.add(actual);
                          }
                        }
                     }

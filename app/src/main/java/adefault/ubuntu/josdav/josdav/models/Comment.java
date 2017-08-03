@@ -1,5 +1,5 @@
 
-package adefault.ubuntu.josdav.josdav;
+package adefault.ubuntu.josdav.josdav.models;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 

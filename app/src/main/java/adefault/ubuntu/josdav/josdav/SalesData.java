@@ -26,6 +26,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Date;
 
+import adefault.ubuntu.josdav.josdav.models.Sales;
+
 public class SalesData extends BaseActivity implements View.OnClickListener {
     private static final String REQUIRED = "Required";
     ExpandableRelativeLayout  expandableLayout1;

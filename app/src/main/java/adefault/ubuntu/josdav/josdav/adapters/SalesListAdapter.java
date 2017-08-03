@@ -2,7 +2,6 @@ package adefault.ubuntu.josdav.josdav.adapters;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,17 +10,18 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import adefault.ubuntu.josdav.josdav.models.Comment;
 import adefault.ubuntu.josdav.josdav.R;
+import adefault.ubuntu.josdav.josdav.models.MonthlySale;
+import adefault.ubuntu.josdav.josdav.models.Sales;
 
-public class DailyFeedsListAdapter extends BaseAdapter {
+public class SalesListAdapter extends BaseAdapter {
 
 
     private Context mContext;
-    private ArrayList<Comment> temporaryArray;
-    private ArrayList<Comment> permanentArray;
+    private ArrayList<MonthlySale> temporaryArray;
+    private ArrayList<MonthlySale> permanentArray;
 
-    public DailyFeedsListAdapter(Context context, ArrayList<Comment> data) {
+    public SalesListAdapter(Context context, ArrayList<MonthlySale> data) {
         this.mContext = context;
         this.temporaryArray = data;
         this.permanentArray = new ArrayList<>();
@@ -48,33 +48,26 @@ public class DailyFeedsListAdapter extends BaseAdapter {
         ViewHolder viewHolder;
         if (convertView == null) {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
-            convertView = inflater.inflate(R.layout.daily_report_item_layout, parent, false);
+            convertView = inflater.inflate(R.layout.sales_item_layout, parent, false);
             viewHolder = new ViewHolder();
-            viewHolder.tvDay = (TextView) convertView.findViewById(R.id.reportDate);
-            viewHolder.tvFeedType = (TextView) convertView.findViewById(R.id.reportFeedType);
-            viewHolder.tvPond = (TextView) convertView.findViewById(R.id.reportPond);
-            viewHolder.tvFeedQty = (TextView) convertView.findViewById(R.id.reportQuantity);
+            viewHolder.tvMonth = (TextView) convertView.findViewById(R.id.saleMonth);
+            viewHolder.tvPond = (TextView) convertView.findViewById(R.id.salePond);
+            viewHolder.tvTotal = (TextView) convertView.findViewById(R.id.saleTotal);
 
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        final Comment product = temporaryArray.get(position);
-        viewHolder.tvDay.setText(product.getFormattedDate(product.messageTime));
-        viewHolder.tvFeedType.setText(product.feed_type);
-        viewHolder.tvPond.setText(product.getPondId());
-        viewHolder.tvFeedQty.setText(product.feed_quantity);
-
-
-
-
-
+        final MonthlySale item = temporaryArray.get(position);
+        viewHolder.tvMonth.setText(item.getMonth());
+        viewHolder.tvPond.setText(item.getPondName());
+        viewHolder.tvTotal.setText(item.getTotal()+"");
         return convertView;
     }
 
     public void filter(String text) {
-        text = text.toLowerCase();
+     /* text = text.toLowerCase();
         temporaryArray.clear();
         if (text.trim().length() == 0) {
             temporaryArray.addAll(permanentArray);
@@ -87,15 +80,13 @@ public class DailyFeedsListAdapter extends BaseAdapter {
             }
             Log.d("SEARCH", "COUNT " + temporaryArray.size());
         }
-        notifyDataSetChanged();
+        notifyDataSetChanged();*/
     }
 
     static class ViewHolder {
-        TextView tvDay;
+        TextView tvMonth;
         TextView tvPond;
-        TextView tvFeedType;
-        TextView tvFeedQty;
-
+        TextView tvTotal;
     }
 }
 

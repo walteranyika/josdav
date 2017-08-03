@@ -29,6 +29,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Date;
 
+import adefault.ubuntu.josdav.josdav.models.Comment;
+
 
 public class PondDaily extends BaseActivity implements View.OnClickListener {
     ExpandableRelativeLayout  expandableLayout3;

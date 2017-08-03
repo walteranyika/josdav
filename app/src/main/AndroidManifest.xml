@@ -52,7 +52,9 @@
             android:name=".FishGrowthActivity"
             android:label="Fish Growth">
         </activity>
-        <activity android:name=".FishGrowthReportActivity" >
+        <activity android:name=".FishGrowthReportActivity">
+        </activity>
+        <activity android:name=".MonthlySalesReportActivity">
         </activity>
     </application>
 

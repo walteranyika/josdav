@@ -4,6 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import adefault.ubuntu.josdav.josdav.models.Sales;
+
 /**
  * Created by android on 7/16/2016.
  */
