@@ -58,7 +58,6 @@ public class MonthlySalesReportActivity extends AppCompatActivity {
                                     long time = item.getMessageTime();
                                     MonthlySale monthlySale = new MonthlySale(pond, quantity, price, total, time, month);
                                     mMonthlySalesDb.saveData(monthlySale);
-
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }

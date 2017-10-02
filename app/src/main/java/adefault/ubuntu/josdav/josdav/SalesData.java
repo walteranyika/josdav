@@ -10,9 +10,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +27,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import adefault.ubuntu.josdav.josdav.models.Sales;
 
@@ -47,7 +51,6 @@ public class SalesData extends BaseActivity implements View.OnClickListener {
         if (mPostKey == null) {
             throw new IllegalArgumentException("Must pass EXTRA_POST_KEY");
         }
-
         // Initialize Database
         final String uid = getUid();
         edtFishNumber = (EditText) findViewById(R.id.number);
@@ -81,9 +84,7 @@ public class SalesData extends BaseActivity implements View.OnClickListener {
 
             }
         });
-
-
-
+        getAvailableStocks();
     }
 
     @Override
@@ -126,8 +127,10 @@ public class SalesData extends BaseActivity implements View.OnClickListener {
                 break;
         }
     }
-
+    double availableStock=0;
     private void postASale() {
+        InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
         final String uid = getUid();
 
         String number = edtFishNumber.getText().toString();
@@ -150,7 +153,17 @@ public class SalesData extends BaseActivity implements View.OnClickListener {
             return;
         }
 
-        Sales sales = new Sales(number, size, price,messageTime);
+        //TODO Reduce the remaining stock before selling
+        double salesNumber = Double.parseDouble(number);
+        if (salesNumber>availableStock){
+            Toast.makeText(this, "You only  have "+availableStock+" fishes in the fish pond", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        //Subtract
+        availableStock-=salesNumber;
+        updateOriginalStocks();
+
+        Sales sales = new Sales(number, size, price, messageTime);
         pondRefrence = FirebaseDatabase.getInstance().getReference().child("pondData/"+getUid()+"/"+mPostKey+"/dailySales/"+messageTime);
         pondRefrence.setValue(sales).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -162,6 +175,33 @@ public class SalesData extends BaseActivity implements View.OnClickListener {
             }
         });
 
+    }
+
+    private void updateOriginalStocks() {
+        DatabaseReference recentStocksRef= FirebaseDatabase.getInstance().getReference().child("pondData/"+getUid()+"/"+mPostKey+"/details");
+        HashMap map=new HashMap<>();
+        map.put("pond_stock",availableStock+"");
+        recentStocksRef.updateChildren(map);
+    }
+
+    private void getAvailableStocks() {
+        DatabaseReference recentStocksRef= FirebaseDatabase.getInstance().getReference().child("pondData/"+getUid()+"/"+mPostKey+"/details");
+        recentStocksRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                 if (dataSnapshot.exists()){
+                     Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                     if (map.get("pond_stock")!=null)
+                     {
+                         availableStock = Double.parseDouble(map.get("pond_stock").toString());
+                     }
+                 }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 }
 
