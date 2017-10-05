@@ -28,17 +28,6 @@ public class Fragment_1 extends Fragment {
         final LinearLayout mRelativeLayout = (LinearLayout) inflater.inflate(R.layout.buttons,
                 container, false);
 
-
-    /*    Button mButton = (Button) mRelativeLayout.findViewById(R.id.button5);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // here you set what you want to do when user clicks your button,
-                Intent intent = new Intent(getActivity(), SendMessage.class);
-                startActivity(intent);
-            }
-        });*/
-
         Button mBu = (Button) mRelativeLayout.findViewById(R.id.buttonu);
         mBu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,34 +37,8 @@ public class Fragment_1 extends Fragment {
                 startActivity(intent);
             }
         });
-        /*Button mButt = (Button) mRelativeLayout.findViewById(R.id.faqs);
-        mButt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // here you set what you want to do when user clicks your button,
-                  Intent intent = new Intent(getActivity(), Faqs.class);
-                startActivity(intent);
-            }
-        });*/
 
-//        Button button44 = (Button) mRelativeLayout.findViewById(R.id.bttnp);
-//        button44.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // here you set what you want to do when user clicks your button,
-//                Intent intent = new Intent(getActivity(), User_Information.class);
-//                startActivity(intent);
-//            }
-//        });
-        Button buttone = (Button) mRelativeLayout.findViewById(R.id.about);
-        buttone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // here you set what you want to do when user clicks your button,
-                Intent intent = new Intent(getActivity(), About.class);
-                startActivity(intent);
-            }
-        });
+
         Button butto = (Button) mRelativeLayout.findViewById(R.id.reps);
         butto.setOnClickListener(new View.OnClickListener() {
             @Override

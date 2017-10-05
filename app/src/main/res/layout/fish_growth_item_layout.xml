@@ -10,24 +10,51 @@
     android:weightSum="3">
 
     <TextView
-        android:id="@+id/reportDate"
+        android:textColor="@color/ColorPond"
+        android:id="@+id/tvReportPondName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="DATE"/>
+        android:layout_weight="0.5"
+        android:text="Pond A"/>
 
     <TextView
-        android:id="@+id/reportPond"
+        android:textColor="@color/ColorPrevWeight"
+        android:id="@+id/tvReportPondPrevWeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="POND/CAGE"/>
+        android:layout_weight="0.5"
+        android:text="122"/>
 
     <TextView
-        android:id="@+id/reportFishSize"
+        android:textColor="@color/ColorCurrentWeight"
+        android:id="@+id/tvReportPondCurrWeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="FISH SIZE"/>
+        android:layout_weight="0.5"
+        android:text="145"/>
+
+    <TextView
+        android:id="@+id/tvReportPondFeedQty"
+        android:textColor="@color/ColorFeedQty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="566"/>
+
+    <TextView
+        android:id="@+id/tvReportPondFcr"
+        android:textColor="@color/ColorFCR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="1.333"/>
+
+    <TextView
+        android:id="@+id/tvReportPondADG"
+        android:textColor="@color/ColorADG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="8.566"/>
 
 </LinearLayout>

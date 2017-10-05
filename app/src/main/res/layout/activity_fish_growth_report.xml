@@ -17,33 +17,57 @@
         android:weightSum="3">
 
         <TextView
-            android:textColor="#000"
+            android:textColor="@color/ColorPond"
             android:id="@+id/reportDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="DATE"/>
+            android:layout_weight="0.5"
+            android:text="Pond"/>
 
         <TextView
-            android:textColor="#000"
+            android:textColor="@color/ColorPrevWeight"
             android:id="@+id/reportPond"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="POND/CAGE"/>
+            android:layout_weight="0.5"
+            android:text="Previous Weight"/>
 
         <TextView
-            android:textColor="#000"
+            android:textColor="@color/ColorCurrentWeight"
             android:id="@+id/reportFeedType"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="FISH SIZE"/>
+            android:layout_weight="0.5"
+            android:text="Current Weight"/>
+
+        <TextView
+            android:textColor="@color/ColorFeedQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Feed Qty"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:textColor="@color/ColorFCR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="FCR"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:textColor="@color/ColorADG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="ADG"/>
 
     </LinearLayout>
 
     <ListView
         android:id="@+id/fishGrowthListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

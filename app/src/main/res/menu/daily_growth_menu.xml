@@ -4,6 +4,6 @@
 
     <item
         android:id="@+id/menu_item_add_daily_growth"
-        android:title="Add Daily Growth"
+        android:title="Submit"
         app:showAsAction="always"/>
 </menu>

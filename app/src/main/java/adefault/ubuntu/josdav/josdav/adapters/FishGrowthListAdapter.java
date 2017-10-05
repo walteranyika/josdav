@@ -2,7 +2,6 @@ package adefault.ubuntu.josdav.josdav.adapters;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,16 +11,16 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import adefault.ubuntu.josdav.josdav.R;
-import adefault.ubuntu.josdav.josdav.models.FishGrowth;
+import adefault.ubuntu.josdav.josdav.models.FishGrowthSummary;
 
 public class FishGrowthListAdapter extends BaseAdapter {
 
 
     private Context mContext;
-    private ArrayList<FishGrowth> temporaryArray;
-    private ArrayList<FishGrowth> permanentArray;
+    private ArrayList<FishGrowthSummary> temporaryArray;
+    private ArrayList<FishGrowthSummary> permanentArray;
 
-    public FishGrowthListAdapter(Context context, ArrayList<FishGrowth> data) {
+    public FishGrowthListAdapter(Context context, ArrayList<FishGrowthSummary> data) {
         this.mContext = context;
         this.temporaryArray = data;
         this.permanentArray = new ArrayList<>();
@@ -50,23 +49,33 @@ public class FishGrowthListAdapter extends BaseAdapter {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
             convertView = inflater.inflate(R.layout.fish_growth_item_layout, parent, false);
             viewHolder = new ViewHolder();
-            viewHolder.tvDay = (TextView) convertView.findViewById(R.id.reportDate);
-            viewHolder.tvFishSize = (TextView) convertView.findViewById(R.id.reportFishSize);
-            viewHolder.tvPond = (TextView) convertView.findViewById(R.id.reportPond);
+            viewHolder.tvPrevWeight = (TextView) convertView.findViewById(R.id.tvReportPondPrevWeight);
+            viewHolder.tvFeedQty = (TextView) convertView.findViewById(R.id.tvReportPondFeedQty);
+            viewHolder.tvPond = (TextView) convertView.findViewById(R.id.tvReportPondName);
+
+            viewHolder.tvFCR = (TextView) convertView.findViewById(R.id.tvReportPondFcr);
+            viewHolder.tvADG = (TextView) convertView.findViewById(R.id.tvReportPondADG);
+            viewHolder.tvCurrWeight= (TextView) convertView.findViewById(R.id.tvReportPondCurrWeight);
+
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        final FishGrowth product = temporaryArray.get(position);
-        viewHolder.tvDay.setText(product.getDate());
-        viewHolder.tvFishSize.setText(""+product.getSize());
-        viewHolder.tvPond.setText(product.getFishPond());
+        final FishGrowthSummary product = temporaryArray.get(position);
+
+        viewHolder.tvFeedQty.setText(""+String.format("%.2f", product.getFeedQty()));
+        viewHolder.tvCurrWeight.setText(""+product.getCurrentWeight());
+        viewHolder.tvPrevWeight.setText(""+product.getPrevWeight());
+        viewHolder.tvADG.setText(""+String.format("%.2f", product.getAdg()));
+        viewHolder.tvFCR.setText(""+String.format("%.2f", product.getFcr()));
+        viewHolder.tvPond.setText(product.getPondName());
+
         return convertView;
     }
 
     public void filter(String text) {
-        text = text.toLowerCase();
+       /* text = text.toLowerCase();
         temporaryArray.clear();
         if (text.trim().length() == 0) {
             temporaryArray.addAll(permanentArray);
@@ -81,15 +90,16 @@ public class FishGrowthListAdapter extends BaseAdapter {
             }
             Log.d("SEARCH", "COUNT " + temporaryArray.size());
         }
-        notifyDataSetChanged();
+        notifyDataSetChanged();*/
     }
 
     static class ViewHolder {
-        TextView tvDay;
+        TextView tvPrevWeight;
+        TextView tvCurrWeight;
+        TextView tvFCR;
+        TextView tvADG;
         TextView tvPond;
-        TextView tvFishSize;
-
-
+        TextView tvFeedQty;
     }
 }
 

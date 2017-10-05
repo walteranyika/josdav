@@ -2,4 +2,12 @@
 <resources>
     <color name="ColorPrimary">#FF5722</color>
     <color name="ColorPrimaryDark">#E64A19</color>
+
+    <color name="ColorPond">#f21313</color>
+    <color name="ColorPrevWeight">#600303</color>
+    <color name="ColorCurrentWeight">#25be07</color>
+    <color name="ColorFeedQty">#0c26bc</color>
+    <color name="ColorFCR">#010183</color>
+    <color name="ColorADG">#034d46</color>
+
 </resources>

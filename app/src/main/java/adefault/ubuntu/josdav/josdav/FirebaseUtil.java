@@ -74,7 +74,7 @@ class FirebaseUtil {
     }
 
     public static DatabaseReference getFeedRef() {
-        return getBaseRef().child("feed");
+        return getBaseRef().child("inputFeedType");
     }
 
     public static DatabaseReference getLikesRef() {
